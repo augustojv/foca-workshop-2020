@@ -212,7 +212,7 @@
                 <div class="col-md-3">
                     <div class="speaker">
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/placeholder.png">
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Ghada_Dessouky.png">
                         </figure>
 
                         <h4>Ghada Dessouky</h4>
@@ -325,8 +325,21 @@
                         </tr>
                         <tr>
                           <th scope="row">10:00 - 10:30am</th>
-                          <td>
-						  	  "TBD"<br>
+                          <td data-toggle="popover" data-placement="top" data-container="body" data-content="
+						  Modern multi-core processors suffer from an inherent performance-security conflict with respect to their continuously evolving performance optimizations. One 
+						  prominent example is how they share cache resources for maximum cache utilization and performance gains. This leave the cache vulnerable to side-channel 
+						  attacks, where inherent timing differences in shared cache behavior are exploited to infer information on the victim’s execution patterns, ultimately leaking 
+						  private information such as a secret key. The root causes for these attacks is mutually distrusting processes sharing the cache entries and accessing them in 
+						  a deterministic and consistent set-associative manner. While various defenses against cache side-channel attacks have been proposed, they continue to suffer 
+						  from serious shortcomings. More importantly, they rigidly assume that side-channel-resilient caches are required for the entire execution workload and do not 
+						  allow the possibility to selectively enable the mitigation only for the security-critical portion of the workload.<br>
+						  In this talk, we discuss our insights on such attacks, and the need for a new hardware design paradigm that considers customizable security as a design 
+						  metric, and not an afterthought. We present a mechanism for a flexible and soft partitioning of set-associative caches and propose hybrid cache architectures 
+						  that can be configured to selectively apply side-channel-resilient cache behavior only for isolated execution domains, while providing the non-isolated 
+						  execution with conventional cache behavior, capacity and performance.  We show how this can be achieved with minimal performance and area overheads, while 
+						  effectively mitigating typical access-based and contention-based cache attacks.
+						  ">
+						  	  "Side-Channel-Resilient Caches for Trusted Execution Environments"<br>
                               Ghada Dessouky (Technical University of Darmstadt)
 						  </td>
                         </tr>
@@ -470,6 +483,8 @@
                         <tr>
                           <th scope="row">3:30 - 4:45pm</th>
                           <td><strong>Lightning talks:</strong><br>
+                              &bull; "TBD"<br>
+							  &nbsp;&nbsp; David Stutz (Max Planck Institute for Informatics, Germany)<br>
                               &bull; "Waferscale Processors"<br>
 							  &nbsp;&nbsp; Saptadeep Pal (University of California, Los Angeles)<br>
 							  &bull; "Symphony: A Framework for Intelligence Augmented Heterogenous Computing Systems"<br>
@@ -478,7 +493,7 @@
 							  &nbsp;&nbsp; Compiler-Enabled Dataflow to Maximize Parallelism While Reducing Memory Utilization"<br>
 							  &nbsp;&nbsp; Cesar Lopez-Carrasco (Texas A&M University)<br>
 							  &bull; "LUTNet: Rethinking Inference in FPGA Soft Logic"<br>
-							  &nbsp;&nbsp; Erwei Wang (Imperial College London)<br>
+							  &nbsp;&nbsp; Erwei Wang (Imperial College, London)<br>
 							  &bull; "Mitigating Set-Conflict Based Cache Attacks with a Practical Fully-Associative Design"<br>
 							  &nbsp;&nbsp; Gururaj Saileshwar (Georgia Institute of Technology)<br>
 							  &bull; "A Low-Power, High-Throughput Microarchitecture for Long Short-Term Memory (LSTM) Neural Network Computation"<br>
